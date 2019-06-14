@@ -1,0 +1,322 @@
+.story {
+    position: relative;
+    width: 100%;
+    height: convertToRem(575px);
+    .story-cap {
+        position: absolute;
+        top: convertToRem(230px);
+        left: convertToRem(150px);
+        z-index: 5;
+        a {
+            color: var(--color-bluelight);
+            font-size: convertToRem(10px);
+            letter-spacing: convertToRem(5px);
+        }
+        h1 {
+            font-size: convertToRem(60px);
+            font-weight: 900;
+            color: var(--color-black);
+            font-family: var(--font-playfair)
+        }
+        p {
+            font-size: convertToRem(14px);
+            color: var(--color-graylight);
+            font-family: var(--font-poppins)
+        }
+    }
+    .story-img {
+        position: absolute;
+        width: convertToRem(1018px);
+        height: convertToRem(575px);
+        left: 19%;
+        top: convertToRem(50px);
+        z-index: 1;
+        -webkit-box-shadow: convertToRem(-16px) convertToRem(7px) convertToRem(82px) convertToRem(-28px) rgba(0, 0, 0, 0.7);
+        -moz-box-shadow: convertToRem(-16px) convertToRem(7px) convertToRem(82px) convertToRem(-28px) rgba(0, 0, 0, 0.7);
+        box-shadow: convertToRem(-16px) convertToRem(7px) convertToRem(82px) convertToRem(-28px) rgba(0, 0, 0, 0.7);
+    }
+}
+
+hr {
+    border: convertToRem(1px) solid var(--color-bluelight);
+}
+
+.hr-horizontal {
+    width: convertToRem(100px);
+    margin-left: convertToRem(100px);
+    &--short {
+        width: convertToRem(50px);
+        margin-left: convertToRem(0px);
+    }
+    &--long {
+        width: convertToRem(100px);
+        margin-left: convertToRem(0px);
+    }
+}
+
+.hr-vertical {
+    width: convertToRem(100px);
+    transform: rotate(90deg);
+    margin-top: convertToRem(100px);
+    margin-bottom: convertToRem(100px);
+}
+
+.caption {
+    text-align: center;
+    margin-top: convertToRem(180px);
+    width: 100%;
+    h4 {
+        color: var(--color-gray);
+        font-family: var(--font-playfair);
+    }
+    p {
+        color: var(--color-gray);
+        font-family: var(--font-poppins);
+        font-size: convertToRem(10px);
+        letter-spacing: convertToRem(3px);
+        margin: convertToRem(30px) 0 convertToRem(30px) 0
+    }
+}
+
+.media {
+    position: relative;
+    margin-top: convertToRem(50px);
+    width: 100%;
+    .media-img {
+        background-image: url(../img/img2.png);
+        background-repeat: no-repeat;
+        background-position: left top;
+        position: absolute;
+        width: convertToRem(616px);
+        height: auto;
+        left: convertToRem(280px);
+        a {
+            margin-left: convertToRem(100px);
+            color: var(--color-black);
+            font-size: convertToRem(10px);
+            letter-spacing: convertToRem(5px);
+            font-weight: bold;
+        }
+        p {
+            margin-top: convertToRem(450px);
+            margin-left: convertToRem(100px);
+            color: var(--color-graylight);
+            font-family: var(--font-poppins);
+        }
+    }
+    .media-video {
+        position: absolute;
+        width: convertToRem(706px);
+        height: convertToRem(549px);
+        left: convertToRem(830px);
+        top: convertToRem(45px);
+    }
+}
+
+.product {
+    margin-top: 38%;
+    .product-title {
+        text-align: center;
+        margin-top: convertToRem(50px);
+        h1 {
+            font-weight: 700;
+            font-family: var(--font-playfair);
+        }
+        a {
+            color: var(--color-bluelight);
+            letter-spacing: convertToRem(3px);
+        }
+    }
+    .product-content {
+        width: convertToRem(400px);
+        position: absolute;
+        left: convertToRem(200px);
+        top: convertToRem(150px);
+        p {
+            color: var(--color-graylight);
+        }
+        h1 {
+            font-family: var(--font-playfair)
+        }
+        h2 {
+            font-family: var(--font-poppins);
+            color: var(--color-violet);
+            margin-left: convertToRem(100px)
+        }
+        a {
+            font-size: convertToRem(10px);
+            font-weight: bold;
+            letter-spacing: convertToRem(3px);
+            margin-left: convertToRem(130px);
+            color: var(--color-black)
+        }
+    }
+    .product-img {
+        width: convertToRem(250px);
+        background-image: url(../img/bg.png);
+        background-repeat: no-repeat;
+        background-position: center 100%;
+        text-align: center;
+    }
+}
+
+.carousel-wrap {
+    position: relative;
+}
+
+#customNav {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+
+.owl-carousel {
+    .owl-item,
+    .product-img {
+        img {
+            width: 100px;
+            display: inline-block;
+        }
+    }
+}
+
+.item {
+    width: 100%;
+}
+
+.owl-nav {
+    button {
+        background-color: transparent;
+        border: 0;
+        font-size: convertToRem(30px)
+    }
+    button:focus {
+        outline: none;
+    }
+}
+
+.activity {
+    width: 100%;
+    margin-top: convertToRem(100px);
+    height: auto;
+    .activity-post {
+        margin-top: 100px;
+        width: 100%;
+        height: convertToRem(450px);
+        position: relative;
+        .activity-img--right {
+            position: absolute;
+            width: convertToRem(765px);
+            left: convertToRem(850px);
+        }
+        .activity-content--left {
+            position: absolute;
+            width: convertToRem(380px);
+            height: convertToRem(280px);
+            left: convertToRem(475px);
+            top: convertToRem(100px);
+        }
+        .activity-img--left {
+            position: absolute;
+            width: convertToRem(492px);
+            left: convertToRem(500px);
+        }
+        .activity-content--right {
+            position: absolute;
+            width: convertToRem(450px);
+            height: convertToRem(285px);
+            left: convertToRem(1100px);
+            top: convertToRem(100px);
+        }
+    }
+}
+
+.activity-post {
+    h1 {
+        font-family: var(--font-playfair);
+        font-weight: 700
+    }
+    p {
+        font-family: var(--font-poppins);
+        color: var(--color-graylight);
+        font-size: convertToRem(15px)
+    }
+    a {
+        color: var(--color-black);
+        letter-spacing: convertToRem(3px);
+        font-size: convertToRem(12px);
+        font-weight: bold
+    }
+}
+
+.contact {
+    width: 100%;
+    margin-top: convertToRem(50px);
+    text-align: center;
+    &-content {
+        p {
+            font-family: var(--font-poppins);
+            font-size: convertToRem(20px);
+            color: var(--color-graylight);
+        }
+        h1 {
+            font-family: var(--font-playfair);
+            font-weight: 900;
+            font-size: convertToRem(60px)
+        }
+    }
+    &-button {
+        width: convertToRem(590px);
+        margin-left: 35%;
+        margin-top: convertToRem(50px)
+    }
+    .form-control {
+        border-radius: convertToRem(0px);
+        height: convertToRem(50px);
+        font-size: convertToRem(10px);
+        font-weight: bold;
+        letter-spacing: convertToRem(3px);
+        background-color: #dfdfdf;
+    }
+    .btn {
+        border-radius: convertToRem(0px);
+        width: convertToRem(50px);
+        height: convertToRem(50px);
+        background-color: var(--color-bluelight);
+        color: white;
+    }
+}
+
+.address {
+    margin-top: convertToRem(100px);
+    position: relative;
+    width: 100%;
+    height: convertToRem(600px);
+    &-img {
+        position: absolute;
+    }
+    &-content {
+        position: absolute;
+        left: convertToRem(1040px);
+        top: convertToRem(180px);
+        p {
+            font-size: convertToRem(10px);
+            color: var(--color-graylight);
+            letter-spacing: convertToRem(3px)
+        }
+        h1 {
+            margin-left: convertToRem(48px);
+            padding: convertToRem(30px) 0 convertToRem(30px) 0;
+            font-family: var(--font-playfair);
+            font-weight: 700
+        }
+        a {
+            color: var(--color-bluelight);
+            font-size: convertToRem(10px);
+            letter-spacing: convertToRem(3px);
+        }
+    }
+}

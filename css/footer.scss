@@ -1,0 +1,8 @@
+.footer {
+    margin: convertToRem(100px) 0 convertToRem(100px) 0;
+    text-align: center;
+    line-height: convertToRem(50px);
+    &-navbar {
+        margin-top: convertToRem(10px)
+    }
+}
